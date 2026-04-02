@@ -1,5 +1,5 @@
 const MyConstants = {
-  MONGODB_URI: 'mongodb://127.0.0.1:27017/shopping_online',
+  MONGODB_URI: 'mongodb://kimtandb_user:kimtan123456@ac-fntnrcz-shard-00-00.2dzozas.mongodb.net:27017,ac-fntnrcz-shard-00-01.2dzozas.mongodb.net:27017,ac-fntnrcz-shard-00-02.2dzozas.mongodb.net:27017/?ssl=true&replicaSet=atlas-rg4po5-shard-0&authSource=admin&appName=Cluster0',
   DB_DATABASE: 'shopping_online',
 
   EMAIL_SERVICE: process.env.EMAIL_SERVICE || 'gmail',
