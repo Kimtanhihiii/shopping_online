@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f7f7;
+  color: #111;
+}
+
+.body-customer {
+  width: min(1200px, calc(100% - 32px));
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 16px 0 32px;
+}
+
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+div.inline {
+  display: inline-block;
+}
+
+figure.caption-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.align-center {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px 20px 20px;
+  border: 1px solid black;
+}
+
+.auth-panel {
+  margin-top: 32px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+
+div.float-left {
+  float: left;
+}
+
+div.float-right {
+  float: right;
+}
+
+div.float-clear {
+  clear: both;
+}
+
+ul.menu {
+  margin: 0;
+  padding: 0;
+}
+
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+form.search {
+  margin: 0;
+}
+
+input.keyword {
+  width: 140px;
+}
+
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+
+.section-block {
+  margin-top: 24px;
+}
+
+.product-card {
+  margin: 12px;
+}
+
+.product-card img,
+.product-detail img {
+  object-fit: cover;
+  border: 1px solid #cfcfcf;
+  background: white;
+}
+
+.product-detail {
+  align-items: flex-start;
+}
+
+.product-detail figcaption {
+  min-width: 320px;
+}
+
+.product-detail table td {
+  padding: 6px 8px;
+  vertical-align: top;
+}
+
+.order-table th,
+.order-table td {
+  padding: 8px 10px;
+}
+
+@media (max-width: 900px) {
+  figure.caption-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  div.float-left,
+  div.float-right {
+    float: none;
+  }
+
+  div.float-right {
+    margin-top: 12px;
+  }
+}
